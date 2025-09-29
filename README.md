@@ -1,21 +1,37 @@
-# React + TypeScript + Vite
+# Headless WordPress + React + Vite + Tailwind + Vercel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![cover](https://raw.githubusercontent.com/orlandoDe/headless-wp-demo/main/public/cover.png) <!-- Puedes cambiarlo por tu cover_image de WP -->
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+## 📖 Descripción
 
-## Deploy Your Own
+Este proyecto es una **demo de arquitectura Headless CMS** usando **WordPress solo como backend** y un frontend moderno en **React + Vite + Tailwind**, desplegado en **Vercel**.
 
-Deploy your own Vite project with Vercel.
+La idea principal es separar el **CMS** del **frontend**:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+- **WordPress** se encarga de gestionar el contenido y exponerlo vía **REST API**.
+- **React + Vite** consumen ese contenido y lo renderizan de forma rápida y optimizada.
+- **Tailwind CSS** permite diseñar una interfaz atractiva con utilidades listas para usar.
+- **Vercel** gestiona el deploy serverless con CI/CD automático desde GitHub.
 
-_Live Example: https://vite-react-example.vercel.app_
+👉 El contenido dinámico (ejemplo: stack tecnológico, timeline, demo URL) se gestiona en WordPress mediante **ACF (Advanced Custom Fields)**.
 
-### Deploying From Your Terminal
+---
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+## ⚡ Stack Tecnológico
 
-```shell
-$ vercel
-```
+- 📰 **WordPress Headless** — CMS clásico pero usado únicamente como API.
+- 🎛 **Advanced Custom Fields (ACF)** — para personalizar la información del proyecto.
+- 🔌 **REST API** — para consumir el contenido en formato JSON.
+- ⚛ **React + Vite** — frontend moderno, rápido y fácil de desplegar.
+- 🎨 **Tailwind CSS** — diseño limpio, responsivo y estilizado.
+- ▲ **Vercel** — despliegue automático desde GitHub con CI/CD.
+
+---
+
+## 🛠 Instalación y uso
+
+1. Clona este repositorio:
+
+   ```bash
+   git clone https://github.com/orlandoDe/headless-wp-demo.git
+   cd headless-wp-demo
