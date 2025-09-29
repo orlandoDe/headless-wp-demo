@@ -1,0 +1,13 @@
+/* src/index.css */
+@import "tailwindcss";
+
+/* (Opcional) utilidades propias, pero evita resets que pongan fondo negro o colores globales */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
