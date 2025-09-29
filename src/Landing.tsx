@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
+import { WPPost } from "./types";
 
 const API_URL =
     "https://head-less-wp.linuseast1wp.hustly.live/wp-json/wp/v2/posts?acf_format=standard";
 
 export default function App() {
-    const [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState<WPPost[]>([]);
     const [loading, setLoading] = useState(true);
+    
 
     useEffect(() => {
         fetch(API_URL)
             .then((res) => res.json())
-            .then((data) => {
+            .then((data: WPPost[]) => {
                 setPosts(data);
                 setLoading(false);
             });
