@@ -1,6 +1,6 @@
 # Headless WordPress + React + Vite + Tailwind + Vercel
 
-![cover](https://raw.githubusercontent.com/orlandoDe/headless-wp-demo/main/public/cover.png) <!-- Puedes cambiarlo por tu cover_image de WP -->
+![cover](https://head-less-wp.linuseast1wp.hustly.live/wp-content/uploads/2025/09/headless.png)
 
 ## 📖 Descripción
 
