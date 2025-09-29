@@ -51,7 +51,7 @@ En el admin de WordPress:
 
 Ve a Custom Fields → Herramientas.
 
-Importa el archivo acf-export-2025-09-29.json
+Importa el archivo [acf-export-2025-09-29.json](https://head-less-wp.linuseast1wp.hustly.live/wp-content/uploads/2025/09/acf-export-2025-09-29.json)
 
 
 ### 2. Frontend con React + Vite + Tailwind
