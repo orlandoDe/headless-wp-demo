@@ -87,8 +87,7 @@ export default function App() {
                         {posts.map((post) => (
                             <article
                                 key={post.id}
-                                className="w-[28rem] max-w-full mx-auto rounded-2xl bg-black/30 backdrop-blur-md shadow-2xl p-8 border border-white/20 hover:scale-[1.02] transition"
-                            >
+                                className="w-full sm:w-[22rem] md:w-[26rem] lg:w-[28rem] mx-auto rounded-2xl bg-black/30 backdrop-blur-md shadow-2xl p-8 border border-white/20 hover:scale-[1.02] transition">
                                 <h3 className="text-2xl font-bold mb-4 text-white drop-shadow">
                                     {post.title.rendered}
                                 </h3>
@@ -112,15 +111,49 @@ export default function App() {
             </section>
 
             {/* Footer */}
-            <footer className="text-center py-10 text-slate-300 text-sm">
-                Hecho con ❤️ usando WordPress Headless, React y Vercel ·{" "}
-                <a
-                    href="https://github.com/orlandoDe/headless-wp-demo"
-                    className="underline hover:text-white"
-                >
-                    Ver repo
-                </a>
+            <footer className="text-center py-10 text-sm text-slate-200 border-t border-white/20 mt-12">
+                <div className="flex flex-col items-center gap-3">
+                    <p className="flex flex-wrap justify-center items-center gap-1 text-center leading-relaxed">
+                        Hecho con{" "}
+                        <span className="text-red-500 text-lg">❤️</span>{" "}
+                        usando{" "}
+                        <span className="font-semibold text-white whitespace-nowrap">
+                            WordPress Headless
+                        </span>
+                        ,{" "}
+                        <span className="font-semibold text-white whitespace-nowrap">
+                            React
+                        </span>{" "}
+                        y{" "}
+                        <span className="font-semibold text-white whitespace-nowrap">
+                            Vercel
+                        </span>
+                        .
+                    </p>
+
+                    <a
+                        href="https://github.com/orlandoDe/headless-wp-demo"
+                        className="text-indigo-300 hover:text-indigo-100 underline font-medium"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Ver repositorio →
+                    </a>
+
+                    <p className="text-xs text-slate-400">
+                        © {new Date().getFullYear()} — Desarrollado por{" "}
+                        <a
+                            href="https://github.com/orlandoDe"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-indigo-300 hover:text-indigo-100"
+                        >
+                            @orlandoDe
+                        </a>
+                    </p>
+                </div>
             </footer>
+
         </main>
     );
 }
